@@ -3,6 +3,8 @@ Practical Machine Learning: Course Project.
 
 ### Author: Peter Glushkov, 28 Feb 2016
 
+### link to the repository : https://github.com/pglushkov/PracticalMachineLearning_Course
+
 ## Executive Summary
 
 In current assignment we have to study data collected by sensors placed on a human body. The sensors were collecting
@@ -253,3 +255,5 @@ a list, containing:
 1. Stacked training dataset
 2. Stacked test dataset
 3. List of individual trained binary classifiers
+
+Code that creates the stacked datasets and runs model training and evaluation can be found at 'run_training,R' file.
