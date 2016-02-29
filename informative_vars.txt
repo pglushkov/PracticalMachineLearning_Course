@@ -1,0 +1,29 @@
+
+	Variables that seem to be informative:
+total_accel_arm (E,D,)
+total_accel_forearm (A)
+total_accel_belt(E)
+accel_arm_x (A vs all)
+accel_arm_z (A vs all)
+roll / pitch / yaw arm (A,B)
+qyros_arm x/y/z (A vs all)
+magnet_arm x/y/z (B,D,E vs C,A)
+rall / pitch/ yaw belt (E)
+gyros_belt x/y/z (E)
+magnet_belt x/y/z (D,E)
+accel_dumbbell x/y/z (B,E)
+roll / pitch/ yaw dumbbell (B,C,E)
+magnet_dumbbell x/y/z (B,E)
+accel_forearm_x (A vs all)
+roll/pitch/yaw forearm (all seem to spot out at some cases ...)
+magnet_forearm_x (A,D vs all)
+magnet_forearm_y (B,E vs all)
+
+_____________
+about 37 features seem to be informative ...
+
+
+
+LM_FIT <- train(classe ~ total_accel_belt + total_accel_arm + total_accel_forearm + accel_arm_x + accel_arm_z + roll_arm + pitch_arm + yaw_arm + gyros_arm_x + gyros_arm_y + gyros_arm_z + magnet_arm_x + magnet_arm_y + magnet_arm_z + roll_belt + pitch_belt + yaw_belt +	gyros_belt_x + gyros_belt_y + gyros_belt_z + magnet_belt_x + magnet_belt_y + magnet_belt_z + accel_dumbbell_x + accel_dumbbell_y + accel_dumbbell_z + roll_dumbbell + pitch_dumbbell + yaw_dumbbell + magnet_dumbbell_x + magnet_dumbbell_y + magnet_dumbbell_z + accel_forearm_x + roll_forearm + pitch_forearm + yaw_forearm + magnet_forearm_x + magnet_forearm_y, data = DATA, method = 'lm');
+
+___________________________________________________
